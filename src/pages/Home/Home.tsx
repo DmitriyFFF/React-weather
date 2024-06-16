@@ -5,7 +5,7 @@ import styles from './Home.module.scss';
 export interface Props {
 }
 
-export function Home (props: Props) {
+export const Home = (props: Props) => {
   return (
     <div className={styles.home}>
       Home
