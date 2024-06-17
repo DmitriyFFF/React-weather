@@ -1,0 +1,40 @@
+@import '../../styles/variable.scss';
+
+.day {
+  max-width: 400px;
+  padding: 20px 20px 20px 18px;
+  width: 100%;
+  background: $lite-background;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+  svg {
+    width: 119px;
+    height: 119px;
+  }
+
+  .temp {
+    font-size: 96px;
+    font-weight: 500;
+    color: $primary-color;
+  }
+
+  .current {
+    font-size: 40px;
+    color: $base-color;
+  }
+
+  .bottom {
+    .time,
+    .city {
+      color: $lite-color;
+    }
+  }
+}
