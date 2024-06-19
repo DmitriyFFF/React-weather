@@ -1,25 +1,34 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styles from './DayInfo.module.scss';
+import cloud from '../../assets/images/cloud.png';
+import { items } from '../../utils/constants';
+import { DayInfoItem } from '../DayInfoItem/DayInfoItem';
+// import { TItem } from '../../utils/types';
 
-export interface Props {
-}
+// export interface Props {
+// }
 
-export const DayInfo = (props: Props) => {
+// export type TItem = {
+//   icon_id: string;
+//   name: string;
+//   value: string;
+// };
+
+export const DayInfo: FC = () => {
+  // const items = [{
+  //   icon_id: '',
+  //   name: '',
+  //   value: ''
+  // }];
 
   return (
     <div className={styles.day_info}>
-      <ul className={styles.top}>
-        <li className={styles.temp}>20</li>
-        <li className={styles.current}>Сегодня</li>_day
+      <ul className={styles.day_info_items}>
+        {items.map(item => (
+          <DayInfoItem item={item} key={item.icon_id} />
+        ))}
       </ul>
-      <ul className={styles.bottom}>
-        <li className={styles.time}>
-          Время: <span>21:34</span>
-        </li>
-        <li className={styles.city}>
-          Город: <span>Астрахань</span>
-        </li>
-      </ul>
+      <img className={styles.image} src={cloud} alt="облако" />
     </div>
   );
 }

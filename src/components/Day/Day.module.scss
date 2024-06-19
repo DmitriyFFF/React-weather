@@ -30,11 +30,16 @@
     font-size: 40px;
     color: $base-color;
   }
+}
 
-  .bottom {
-    .time,
-    .city {
-      color: $lite-color;
-    }
+.bottom {
+  .time,
+  .city {
+    font-size: 25px;
+    color: $lite-color;
+  }
+
+  .time {
+    margin-bottom: 14px;
   }
 }

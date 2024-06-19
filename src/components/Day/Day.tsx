@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styles from './Day.module.scss';
 import { GlobalSvgSelector } from '../../assets/icons/global/GlobalSvgSelector';
 
-export interface Props {
-}
+// export interface Props {
+// }
 
-export const Day = (props: Props) => {
+export const Day: FC = () => {
 
   return (
     <div className={styles.day}>
