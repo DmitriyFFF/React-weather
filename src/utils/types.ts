@@ -7,3 +7,16 @@ export type TItem = {
 export type TItemProps = {
   item: TItem;
 };
+
+export type TCard = {
+  day: string;
+  date: string;
+  icon_id: string;
+  temp_day: string;
+  temp_night: string;
+  info: string;
+};
+
+export type TCardProps = {
+  card: TCard;
+};

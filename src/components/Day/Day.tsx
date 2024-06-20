@@ -14,7 +14,7 @@ export const Day: FC = () => {
           <div className={styles.temp}>20</div>
           <div className={styles.current}>Сегодня</div>
         </div>
-        <GlobalSvgSelector id='sun' />
+        <GlobalSvgSelector id='day_sun' />
       </div>
       <div className={styles.bottom}>
         <div className={styles.time}>
