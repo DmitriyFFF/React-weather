@@ -1,6 +1,6 @@
-import { TCard } from "./types";
+import { TCard, TItem, TTabs } from "./types";
 
-export const items = [
+export const items: TItem[] = [
   {
     icon_id: 'temp',
     name: 'Температура',
@@ -79,5 +79,17 @@ export const cards: TCard[] = [
     temp_day: '+34',
     temp_night: '+28',
     info: 'Облачно',
+  },
+];
+
+export const tabs: TTabs[] = [
+  {
+    value: 'На неделю',
+  },
+  {
+    value: 'На 10 дней',
+  },
+  {
+    value: 'На месяц',
   },
 ];

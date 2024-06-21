@@ -20,3 +20,7 @@ export type TCard = {
 export type TCardProps = {
   card: TCard;
 };
+
+export type TTabs = {
+  value: string;
+};
