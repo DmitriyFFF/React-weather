@@ -12,7 +12,7 @@ export const Cards: FC = () => {
       <Tabs />
       <div className={styles.cards}>
         {cards.map((item: TCard) => (
-          <Card card={item} key={item.icon_id} />
+          <Card card={item} key={item.date} />
         ))}
       </div>
     </>
