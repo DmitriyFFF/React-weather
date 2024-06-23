@@ -1,19 +1,18 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Select from 'react-select';
-import styles from './Header.module.scss';
+
 import { GlobalSvgSelector } from '../../assets/icons/global/GlobalSvgSelector';
 
-export interface Props {
-}
+import styles from './Header.module.scss';
 
-export const Header = (props: Props) => {
+export const Header: FC = () => {
   const options = [
     { value: 'city-1', label: 'Астрахань' },
     { value: 'city-2', label: 'Санкт-Петербург' },
     { value: 'city-3', label: 'Москва' }
   ]
 
-  const colourStyles = {
+  const colorStyles = {
     control: (styles: any) => ({
       ...styles,
       backgroundColor: 'rgba(71, 147, 255, 0.2)',
@@ -37,7 +36,7 @@ export const Header = (props: Props) => {
         </div>
         <Select
           defaultValue={options[0]}
-          styles={colourStyles}
+          styles={colorStyles}
           options={options}/>
       </div>
     </header>

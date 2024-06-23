@@ -1,9 +1,10 @@
 import React, { FC } from 'react';
-import styles from './Cards.module.scss';
-import { cards } from '../../utils/constants';
+
 import { Card } from '../Card/Card';
-import { TCard } from '../../utils/types';
 import { Tabs } from '../Tabs/Tabs';
+import { cards } from '../../utils/constants';
+
+import styles from './Cards.module.scss';
 
 export const Cards: FC = () => {
 
@@ -11,7 +12,7 @@ export const Cards: FC = () => {
     <>
       <Tabs />
       <div className={styles.cards}>
-        {cards.map((item: TCard) => (
+        {cards.map(item => (
           <Card card={item} key={item.date} />
         ))}
       </div>

@@ -1,7 +1,9 @@
 import React, { FC } from 'react';
-import styles from './Card.module.scss';
-import { TCardProps } from '../../utils/types';
+
 import { GlobalSvgSelector } from '../../assets/icons/global/GlobalSvgSelector';
+import { TCardProps } from '../../utils/types';
+
+import styles from './Card.module.scss';
 
 export const Card: FC<TCardProps> = ({card}) => {
   const { day, date, icon_id, temp_day, temp_night, info } = card;

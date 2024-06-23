@@ -1,14 +1,12 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-import styles from './Home.module.scss';
 import { Day } from '../../components/Day/Day';
 import { DayInfo } from '../../components/DayInfo/DayInfo';
 import { Cards } from '../../components/Cards/Cards';
 
-export interface Props {
-}
+import styles from './Home.module.scss';
 
-export const Home = (props: Props) => {
+export const Home: FC = () => {
   return (
     <div className={styles.home}>
       <div className={styles.container}>

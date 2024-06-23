@@ -3,10 +3,6 @@ import { TItemProps } from "../../utils/types";
 import styles from './DayInfoItem.module.scss';
 import { IndicatorSvgSelector } from "../../assets/icons/indicator/IndicatorSvgSelector";
 
-// interface Props {
-//   item: TItem
-// }
-
 export const DayInfoItem: FC<TItemProps> = ({item}) => {
   const { icon_id, name, value } = item;
   return (

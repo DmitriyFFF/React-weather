@@ -1,7 +1,9 @@
 import React, { FC } from 'react';
-import styles from './DayInfo.module.scss';
-import cloud from '../../assets/images/cloud.png';
+
 import { DayInfoList } from '../DayInfoList/DayInfoList';
+import cloud from '../../assets/images/cloud.png';
+
+import styles from './DayInfo.module.scss';
 
 export const DayInfo: FC = () => {
   return (

@@ -1,6 +1,8 @@
 import React, { FC } from 'react';
-import { items } from '../../utils/constants';
+
 import { DayInfoItem } from '../DayInfoItem/DayInfoItem';
+import { items } from '../../utils/constants';
+
 import styles from './DayInfoList.module.scss';
 
 export const DayInfoList: FC = () => {

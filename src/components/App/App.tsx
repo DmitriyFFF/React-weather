@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Home } from './pages/Home/Home';
-import { MonthStatistics } from './pages/MonthStatistics/MonthStatistics';
-import { Header } from './components/Header/Header';
-import { Popup } from './components/Popup/Popup';
 
-function App() {
+import { Home } from '../../pages/Home/Home';
+import { MonthStatistics } from '../../pages/MonthStatistics/MonthStatistics';
+import { Header } from '../Header/Header';
+// import { Popup } from '../Popup/Popup';
+
+export const App: FC = () => {
   return (
     <>
-      <Popup />
+      {/* <Popup /> */}
       <div className='content'>
         <Header />
         <Routes>

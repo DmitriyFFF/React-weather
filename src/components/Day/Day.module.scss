@@ -4,7 +4,7 @@
   max-width: 400px;
   padding: 20px 20px 20px 18px;
   width: 100%;
-  background: $lite-background;
+  background: var(#{--component-background-default});
   box-shadow: $box-shadow;
   border-radius: $border-radius;
 }
@@ -36,7 +36,7 @@
   .time,
   .city {
     font-size: 25px;
-    color: $lite-color;
+    color: $light-color;
   }
 
   .time {
