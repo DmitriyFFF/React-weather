@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  background: rgba(71, 147, 255, 0.2);
+  background: var(#{--card-background-default});
   width: 149px;
   padding: 13px 11px;
   transition: 0.3s;
@@ -12,12 +12,12 @@
 
   .day, .temp_day {
     font-size: 18px;
-    color: $base-color;
+    color: var(#{--text-color-default});
   }
 
   .date {
     font-size: 14px;
-    color: $light-color;
+    color: $grey-color;
     margin: 7px 0 12px;
   }
 
@@ -29,7 +29,7 @@
 
   .temp_night, .info {
     font-size: 13px;
-    color: $light-color;
+    color: $grey-color;
   }
 
   .temp_night {
@@ -43,7 +43,7 @@
   }
 
   &:hover {
-    box-shadow: 0px 3px 20px rgba(147, 144, 144, 0.28);
+    box-shadow: var(#{--card-shadow-default});
   }
 }
 

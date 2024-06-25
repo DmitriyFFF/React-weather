@@ -19,7 +19,7 @@
   align-items: center;
   width: 38px;
   height: 38px;
-  background-color: #fff;
+  background-color: var(#{--component-background-default});
   border-radius: 50%;
   box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
 }
@@ -30,9 +30,9 @@
 }
 
 .item_name {
-  color: $light-color;
+  color: $grey-color;
 }
 
 .item_value {
-  color: $base-color;
+  color: var(#{--text-color-default});
 }

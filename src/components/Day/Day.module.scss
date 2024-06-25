@@ -28,7 +28,7 @@
 
   .current {
     font-size: 40px;
-    color: $base-color;
+    color: var(#{--text-color-default});
   }
 }
 
@@ -36,7 +36,7 @@
   .time,
   .city {
     font-size: 25px;
-    color: $light-color;
+    color: $grey-color;
   }
 
   .time {
