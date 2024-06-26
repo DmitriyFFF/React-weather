@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export type TItem = {
   icon_id: string;
   name: string;
@@ -24,3 +26,19 @@ export type TCardProps = {
 export type TTabs = {
   value: string;
 };
+
+export enum Theme {
+  LIGHT = 'light',
+  DARK = 'dark',
+}
+
+export type TThemeContext = {
+  value: Theme;
+  changeValue: (theme: Theme) => void;
+};
+
+export type TProvider = {
+  children: ReactNode;
+};
+
+
