@@ -41,4 +41,13 @@ export type TProvider = {
   children: ReactNode;
 };
 
+export type TResponse = {
+  status: number;
+  message: string;
+};
+
+export type TWeather = {
+
+};
+
 
