@@ -9,7 +9,11 @@ type TCurrentWeather = {
 }
 
 const initialState: TCurrentWeather = {
-  weather: {},
+  weather: {
+    main: {
+      temp: 0,
+    },
+  },
   isLoading: false,
   response: {
     status: 0,

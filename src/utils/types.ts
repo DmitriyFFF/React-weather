@@ -47,7 +47,13 @@ export type TResponse = {
 };
 
 export type TWeather = {
+  main: {
+    temp: number
+  };
+};
 
+export type TDayWeather = {
+  weather: TWeather;
 };
 
 
