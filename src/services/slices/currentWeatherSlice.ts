@@ -13,6 +13,13 @@ const initialState: TCurrentWeather = {
     main: {
       temp: 0,
     },
+    clouds: {
+      all: 0,
+    },
+    // rain: {
+    //   '1h': 0,
+    //   '3h': 0,
+    // },
   },
   isLoading: false,
   response: {

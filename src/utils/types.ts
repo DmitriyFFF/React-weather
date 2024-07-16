@@ -50,6 +50,13 @@ export type TWeather = {
   main: {
     temp: number
   };
+  clouds: {
+    all: number
+  };
+  // rain: {
+  //   '1h': number,
+  //   '3h': number
+  // };
 };
 
 export type TDayWeather = {
