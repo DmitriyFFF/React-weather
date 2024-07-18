@@ -15,7 +15,7 @@ export const Home: FC = () => {
 
   useEffect(() => {
     dispatch(fetchCurrentWeather('astrakhan'));
-    console.log(process.env.REACT_APP_API_KEY)
+    // console.log(process.env.REACT_APP_API_KEY)
   }, [dispatch]);
 
   return (
